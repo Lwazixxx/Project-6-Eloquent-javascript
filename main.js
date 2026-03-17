@@ -71,3 +71,16 @@ for (let arrow = 1; arrow <= 10; arrow = arrow + 1) {
   }
   console.log(`Fired arrow ${arrow}`);
 }
+
+// A loop that runs 5 times (searching 5 corners of a room)
+for (let search = 1; search <= 5; search = search + 1) {
+  console.log(`Searching corner ${search}...`);
+  
+  // Every 2nd corner has 50 gold (The Modulo intuition from Ch 1!)
+  if (search % 2 === 0) {
+    goldFound = goldFound + 50;
+    console.log("Found 50 gold!");
+  }
+}
+
+console.log(`Total gold looted: ${goldFound}`);
