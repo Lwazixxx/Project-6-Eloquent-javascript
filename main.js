@@ -56,3 +56,18 @@ do {
 } while (energy > 0);
 
 // Result: It prints "You attempt a heavy strike" once, even though energy was 0!
+
+for (let strike = 1; strike <= 3; strike = strike + 1) {
+  console.log(`Strike #${strike}!`);
+}
+// → Strike #1!
+// → Strike #2!
+// → Strike #3!
+
+for (let arrow = 1; arrow <= 10; arrow = arrow + 1) {
+  if (arrow === 5) {
+    console.log("Out of arrows! Retreat!");
+    break; // This snaps the loop immediately
+  }
+  console.log(`Fired arrow ${arrow}`);
+}
