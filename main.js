@@ -13,15 +13,20 @@ console.log(prompt);
 
 let goldCOIN = Number(prompt("How much gold do you have?"));
 
-if (goldCOIN > 100) {
+if (goldCOIN < 10) {
   console.log("You buy the Enchanted Blade!");
 }
 
-if (goldCOIN < 100) {
+if (goldCOIN > 100) {
   console.log("You don't have enough gold to buy the Enchanted Blade.");
 }
 
 else {
   console.log("You have exactly 100 gold pieces, you can buy the Enchanted Blade!");
 }
+
+const maxGold = Math.max(2, 4);
+
+
+
 
