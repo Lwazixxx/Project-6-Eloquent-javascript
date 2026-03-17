@@ -27,6 +27,32 @@ else {
 
 const maxGold = Math.max(2, 4);
 
+// 1. The Environment asks a question (Expression)
+let level = Number(prompt("Enter your level to pass the gate:"));
 
+// 2. The Decision (Control Flow Statement)
+if (level >= 10) {
+  console.log("The guard bows. 'Welcome, Champion.'");
+}
 
+if (level < 10) {
+  console.log("The guard laughs. 'Begone, peasant! You are too weak.'");
+}
 
+let monsterHP = 30;
+
+while (monsterHP > 0) {
+  console.log(`The skeleton has ${monsterHP} HP left. You strike!`);
+  monsterHP = monsterHP - 10; // Reducing the value
+}
+
+console.log("The skeleton shatters into dust!");
+
+let energy = 0;
+
+do {
+  console.log("You attempt a heavy strike...");
+  energy = energy - 10;
+} while (energy > 0);
+
+// Result: It prints "You attempt a heavy strike" once, even though energy was 0!
