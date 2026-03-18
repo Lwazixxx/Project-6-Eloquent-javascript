@@ -84,3 +84,20 @@ for (let search = 1; search <= 5; search = search + 1) {
 }
 
 console.log(`Total gold looted: ${goldFound}`);
+
+let heroClass = "Sorceress";
+
+switch (heroClass) {
+  case "Barbarian":
+    console.log("Strength and Honor! You wield an Axe.");
+    break;
+  case "Sorceress":
+    console.log("Magic flows through you! You wield a Staff.");
+    break;
+  case "Necromancer":
+    console.log("The dead obey! You wield a Scythe.");
+    break;
+  default:
+    console.log("A mysterious traveler arrives...");
+    break;
+}
