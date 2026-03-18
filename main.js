@@ -85,6 +85,7 @@ for (let search = 1; search <= 5; search = search + 1) {
 
 console.log(`Total gold looted: ${goldFound}`);
 
+
 let heroClass = "Sorceress";
 
 switch (heroClass) {
@@ -101,3 +102,26 @@ switch (heroClass) {
     console.log("A mysterious traveler arrives...");
     break;
 }
+
+let legendaryItem = "Excalibur";
+
+switch (legendaryItem) {
+    case "Excalibur":
+        console.log("The legendary sword of King Arthur!");
+        break;
+    case "Mjolnir":
+        console.log("The mighty hammer of Thor!");
+        break;
+    case "Gungnir":
+        console.log("The unerring spear of Odin!");
+        break;
+
+        case "Aegis":
+        console.log("The indestructible shield of Zeus!");
+        break;
+
+        case "Trident":
+        console.log("The powerful trident of Poseidon!");
+        break;
+};
+
