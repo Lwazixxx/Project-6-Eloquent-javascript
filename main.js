@@ -125,3 +125,31 @@ switch (legendaryItem) {
         break;
 };
 
+const heroName2 = "Aria";
+
+let hp = 100;
+
+for (let Combat = 1; Combat <= 3; Combat++ ) {
+
+  console.log(`Round Complete ${Combat}!`);
+
+  const Question = prompt(" Round 1: Do you Attack or block?");
+    if (Question === "block") {
+        console.log("You have taken 0 damage!");
+    } else if (Question === "Attack") {
+        console.log("You have taken 10 damage!");
+
+        hp = hp - 20;
+    }
+
+if (hp > 0) {
+
+console.log(`Victory!,  ${heroName2} Survives with ${hp} HP left!`);
+
+}
+
+else{
+    console.log(`Defeat!, ${heroName2} has fallen in battle!`);
+}
+}
+
