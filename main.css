@@ -1,0 +1,195 @@
+/* BASIC RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* BODY */
+body {
+  background: black;
+  color: white;
+  font-family: Arial;
+  display: flex;
+  justify-content: center;
+}
+
+/* APP */
+.app {
+  width: 100%;
+  max-width: 400px;
+  padding: 20px;
+}
+
+/* HEADER */
+.header {
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.header p {
+  color: gray;
+  font-size: 12px;
+}
+
+/* SEARCH */
+.search-box input {
+  width: 100%;
+  padding: 12px;
+  border-radius: 20px;
+  border: none;
+  background: gold;
+  color: black;
+  margin-bottom: 15px;
+}
+
+/* FILTERS */
+.filters {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+.filter {
+  flex: 1;
+  border: 1px solid gold;
+  background: transparent;
+  color: gold;
+  padding: 8px;
+  border-radius: 20px;
+}
+
+.filter.active {
+  background: gold;
+  color: black;
+}
+
+/* TASK CARD */
+.task {
+  background: #111;
+  border-radius: 20px;
+  padding: 15px;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  /* animation */
+  animation: fadeIn 0.3s ease;
+}
+
+.task span {
+  font-size: 14px;
+}
+
+/* DELETE BUTTON */
+.delete {
+  background: red;
+  border-radius: 50%;
+  width: 25px;
+  height: 25px;
+  border: none;
+  color: white;
+}
+
+/* ADD BUTTON */
+.add-btn {
+  width: 100%;
+  background: gold;
+  border: none;
+  padding: 15px;
+  border-radius: 20px;
+  margin-top: 15px;
+}
+
+/* MODAL */
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* HIDE MODAL */
+.hidden {
+  display: none;
+}
+
+.modal-content {
+  background: #111;
+  padding: 20px;
+  border-radius: 20px;
+  width: 90%;
+}
+
+/* INPUT */
+.modal-content input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  border: none;
+  background: #222;
+  color: white;
+}
+
+/* TAGS */
+.tags {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.tag {
+  padding: 5px 10px;
+  border-radius: 20px;
+  font-size: 12px;
+}
+
+.red { background: red; }
+.green { background: green; }
+.blue { background: blue; }
+.yellow { background: gold; color: black; }
+
+/* PRIORITY */
+.priority {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+
+/* BUTTONS */
+.save-btn {
+  background: gold;
+  border: none;
+  padding: 10px;
+  border-radius: 10px;
+  width: 100%;
+}
+
+.close-btn {
+  margin-top: 10px;
+  background: gray;
+  border: none;
+  padding: 10px;
+  border-radius: 10px;
+  width: 100%;
+}
+
+/* ANIMATION */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* MOBILE */
+@media (max-width: 500px) {
+  .app {
+    padding: 10px;
+  }
+}

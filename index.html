@@ -1,14 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
-    <link rel="stylesheet" href="main.css">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <title>Todo App</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="main.css">
 </head>
 <body>
-    
-</body>
+
+<div class="app">
+
+  <!-- HEADER -->
+  <div class="header">
+    <h1>Today</h1>
+    <p id="date"></p>
+  </div>
+
+  <!-- SEARCH -->
+  <div class="search-box">
+    <input id="searchInput" placeholder="Search here..." />
+  </div>
+
+  <!-- FILTER BUTTONS -->
+  <div class="filters">
+    <button class="filter active">Undone</button>
+    <button class="filter">Completed</button>
+    <button class="filter">Top Priority</button>
+  </div>
+
+  <!-- TASK LIST -->
+  <div id="taskList"></div>
+
+  <!-- ADD TASK BUTTON -->
+  <button id="openForm" class="add-btn">+ Add new Task</button>
+
+</div>
+
+
+<!-- ADD TASK MODAL -->
+<div id="modal" class="modal hidden">
+
+  <div class="modal-content">
+
+    <h2>New Task</h2>
+
+    <input id="taskInput" placeholder="What do you need to do?" />
+
+    <!-- TAGS -->
+    <div class="tags">
+      <span class="tag red">Design</span>
+      <span class="tag green">Software</span>
+      <span class="tag blue">Debugging</span>
+      <span class="tag yellow">Meditation</span>
+    </div>
+
+    <!-- PRIORITY -->
+    <div class="priority">
+      <label><input type="radio" name="p"> High</label>
+      <label><input type="radio" name="p"> Medium</label>
+      <label><input type="radio" name="p"> Low</label>
+    </div>
+
+    <button id="saveTask" class="save-btn">Save</button>
+    <button id="closeModal" class="close-btn">Cancel</button>
+
+  </div>
+
+</div>
+
 <script src="main.js"></script>
-<script src="node.js"></script>
+</body>
 </html>
